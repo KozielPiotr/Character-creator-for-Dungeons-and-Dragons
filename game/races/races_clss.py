@@ -41,11 +41,54 @@ class Elf(Race):
     size = "medium"
 
 
+class Gnome(Race):
+    """Class for gnome"""
+
+    name = "gnome"
+
+    strength = -2
+    constitution = 2
+
+    size = "small"
+
+
+class Dwarf(Race):
+    """Class for dwarfs"""
+
+    name = "dwarf"
+
+    constitution = 2
+    charisma = -2
+
+    size = "medium"
+
+
+class Halfling(Race):
+    """Class for halfling"""
+
+    name = "halfling"
+
+    strength = -2
+    dexterity = 2
+
+    size = "small"
+
+
+class HalfElf(Race):
+    """Class for half-elf"""
+
+    name = "half-elf"
+
+    size = "medium"
+
+
 class HalfOrc(Race):
-    """class for half-orc"""
+    """Class for half-orc"""
 
     name = "half-orc"
 
     strength = 2
     intelligence = -2
     charisma = -2
+
+    size = "medium"
