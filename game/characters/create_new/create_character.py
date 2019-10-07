@@ -26,12 +26,14 @@ def character_creator():
 
         distribute_attributes(new_character)
 
-        print("strength: " + str(new_character.strength))
-        print("constitution: " + str(new_character.constitution))
-        print("dexterity: " + str(new_character.dexterity))
-        print("intelligence: " + str(new_character.intelligence))
-        print("wisdom: " + str(new_character.wisdom))
-        print("charisma: " + str(new_character.charisma))
+        print("\n\nname: ", new_character.name)
+
+        print("\nstrength: ", new_character.strength)
+        print("constitution: ", new_character.constitution)
+        print("dexterity: ", new_character.dexterity)
+        print("intelligence: ", new_character.intelligence)
+        print("wisdom: ", new_character.wisdom)
+        print("charisma: ", new_character.charisma)
 
         return new_character
 
