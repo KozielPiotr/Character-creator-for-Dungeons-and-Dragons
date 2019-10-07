@@ -20,7 +20,7 @@ def character_creator():
     chosen_class = class_choose(classes, chosen_race, chosen_class, chosen_name)
     chosen_name = name_choose(chosen_race, chosen_class, chosen_name)
 
-    char = confirm(races, chosen_race, chosen_class, chosen_name)
+    char = confirm(races, classes, chosen_race, chosen_class, chosen_name)
     if char["confirmed"] is True:
         new_character = Character(char["race"], char["class"], char["name"])
 

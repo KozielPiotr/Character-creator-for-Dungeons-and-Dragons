@@ -96,7 +96,7 @@ def name_choose(chosen_race, chosen_class, chosen_name):
     return name
 
 
-def confirm(races, chosen_race, chosen_class, chosen_name):
+def confirm(races, classes, chosen_race, chosen_class, chosen_name):
     """Player decides to accept choices or not"""
 
     confirmed = False
@@ -111,7 +111,7 @@ def confirm(races, chosen_race, chosen_class, chosen_name):
             if to_change == "1":
                 chosen_race = race_choose(races, chosen_race, chosen_class, chosen_name)
             elif to_change == "2":
-                chosen_class = class_choose(races, chosen_race, chosen_class, chosen_name)
+                chosen_class = class_choose(classes, chosen_race, chosen_class, chosen_name)
             elif to_change == "3":
                 chosen_name = name_choose(chosen_race, chosen_class, chosen_name)
             else:
