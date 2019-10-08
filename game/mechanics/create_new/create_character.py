@@ -1,5 +1,6 @@
 """Creates new character"""
 
+
 from game.characters.characters_clss import Character
 from game.races import races_clss
 from game.classes import classes_clss
@@ -24,10 +25,13 @@ def character_creator():
     char = confirm(races, classes, chosen_race, chosen_class, chosen_name)
     if char["confirmed"] is True:
         new_character = Character(char["race"], char["class"], char["name"])
-
         distribute_attributes(new_character)
+        new_character.hp = new_character.count_hp()
 
         print("\n\nname: ", new_character.name)
+        print("race: ", new_character.race.name)
+        print("class: ", new_character.character_class.name)
+        print("HP: ", new_character.hp)
 
         print("\nstrength: ", new_character.strength, "bonus: ", count_att_bonus(new_character.strength))
         print("constitution: ", new_character.constitution, "bonus: ", count_att_bonus(new_character.constitution))
