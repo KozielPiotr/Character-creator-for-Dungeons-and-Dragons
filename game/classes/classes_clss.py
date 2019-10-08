@@ -4,7 +4,7 @@
 Classes for characters:
 """
 
-from game.throws import dice_throw
+from game.mechanics.throws import dice_throw
 
 
 class CharacterClass:

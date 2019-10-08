@@ -3,8 +3,9 @@
 from game.characters.characters_clss import Character
 from game.races import races_clss
 from game.classes import classes_clss
-from game.characters.create_new.utils import choices_dict, race_choose, class_choose, name_choose, confirm,\
+from game.mechanics.create_new.utils import choices_dict, race_choose, class_choose, name_choose, confirm,\
     distribute_attributes
+from game.mechanics.attribute_bonus.attrib_bonus import count_att_bonus
 
 
 def character_creator():
@@ -28,12 +29,12 @@ def character_creator():
 
         print("\n\nname: ", new_character.name)
 
-        print("\nstrength: ", new_character.strength)
-        print("constitution: ", new_character.constitution)
-        print("dexterity: ", new_character.dexterity)
-        print("intelligence: ", new_character.intelligence)
-        print("wisdom: ", new_character.wisdom)
-        print("charisma: ", new_character.charisma)
+        print("\nstrength: ", new_character.strength, "bonus: ", count_att_bonus(new_character.strength))
+        print("constitution: ", new_character.constitution, "bonus: ", count_att_bonus(new_character.constitution))
+        print("dexterity: ", new_character.dexterity, "bonus: ", count_att_bonus(new_character.dexterity))
+        print("intelligence: ", new_character.intelligence, "bonus: ", count_att_bonus(new_character.intelligence))
+        print("wisdom: ", new_character.wisdom, "bonus: ", count_att_bonus(new_character.wisdom))
+        print("charisma: ", new_character.charisma, "bonus: ", count_att_bonus(new_character.charisma))
 
         return new_character
 

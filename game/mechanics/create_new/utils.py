@@ -5,7 +5,7 @@ from time import sleep
 import inspect
 
 from game.utilities.utils import clear, spin
-from game.throws.dice_throw import throw_dices
+from game.mechanics.throws.dice_throw import throw_dices
 
 
 def choices_dict(module):
