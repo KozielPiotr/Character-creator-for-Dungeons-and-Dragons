@@ -1,9 +1,9 @@
 """Creates new character"""
 
 
-from game.characters.characters_clss import Character
-from game.races import races_clss
-from game.classes import classes_clss
+from game.main_classes.characters.characters_clss import Character
+from game.main_classes.races import races_clss
+from game.main_classes.classes import classes_clss
 from game.mechanics.create_new.utils import choices_dict, race_choose, class_choose, name_choose, confirm,\
     distribute_attributes
 from game.mechanics.attribute_bonus.attrib_bonus import count_att_bonus
